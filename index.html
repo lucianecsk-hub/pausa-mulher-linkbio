@@ -118,10 +118,11 @@
   .tagline{
     font-family:'Cormorant Garamond', serif;
     font-style:italic;
-    font-size:16px;
-    color:var(--ink-soft);
+    font-size:17px;
+    color:var(--ink);
     margin:10px 0 0;
     letter-spacing:0.01em;
+    font-weight:500;
   }
 
   /* ---- Links ---- */
@@ -186,6 +187,7 @@
     padding-top:19px;
     padding-bottom:19px;
     position:relative;
+    box-shadow:0 8px 20px rgba(43,42,66,0.22), 0 2px 6px rgba(43,42,66,0.16);
   }
   .link-card.primary::before{
     content:"";
@@ -198,6 +200,13 @@
   .link-card.primary .sub{ color:rgba(247,243,233,0.65); }
   .link-card.primary .icon{ opacity:1; }
   .link-card.primary:hover{ border-color:var(--amber); }
+
+  /* medical referral card: soft blue tint */
+  .link-card.medic{
+    background:#EAF0F5;
+    border-color:#C9D9E5;
+  }
+  .link-card.medic:hover{ border-color:#8FA9BE; }
 
   .divider{
     display:flex;
@@ -269,10 +278,11 @@
       </span>
     </a>
 
-    <a class="link-card" href="https://amigosdoiodo.eu/" target="_blank" rel="noopener">
+    <a class="link-card medic" href="https://amigosdoiodo.eu/" target="_blank" rel="noopener">
       <span class="icon">🩺</span>
       <span class="text">
         <p class="title">Médicos amigos do iodo</p>
+        <p class="sub">Indicação de médicos</p>
       </span>
     </a>
 

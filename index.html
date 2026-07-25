@@ -151,6 +151,7 @@
     border-radius:10px;
     text-decoration:none;
     color:var(--ink);
+    box-shadow:0 2px 6px rgba(43,42,66,0.07), 0 1px 2px rgba(43,42,66,0.05);
     transition:transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
   }
 
@@ -221,6 +222,20 @@
     border-color:#C9D9E5;
   }
   .link-card.medic:hover{ border-color:#8FA9BE; }
+
+  /* materiais section: warm sand tint, one tone below medic */
+  .link-card.tone-materiais{
+    background:#F1E8D8;
+    border-color:#DECBA6;
+  }
+  .link-card.tone-materiais:hover{ border-color:var(--amber); }
+
+  /* indicações section: soft neutral tint, one tone below materiais */
+  .link-card.tone-indicacoes{
+    background:#F5F1E8;
+    border-color:#E2D9C4;
+  }
+  .link-card.tone-indicacoes:hover{ border-color:#C9BA9A; }
 
   .divider{
     display:flex;
@@ -304,7 +319,7 @@
     <div class="divider"><span class="rule"></span><span class="label">materiais</span><span class="rule"></span></div>
 
     <!-- Espaço reservado: material "Descobri que tenho Hashimoto, e agora?" -->
-    <a class="link-card" href="#" target="_blank" rel="noopener">
+    <a class="link-card tone-materiais" href="#" target="_blank" rel="noopener">
       <span class="icon">📖</span>
       <span class="text">
         <p class="title">Descobri que tenho Hashimoto, e agora? (EM BREVE)</p>
@@ -314,7 +329,7 @@
 
     <div class="divider"><span class="rule"></span><span class="label">indicações</span><span class="rule"></span></div>
 
-    <a class="link-card" href="https://www.iherb.com/ugc/wishlist?id=7ff6c746-c324-439c-873c-5d35b26e5c33&rcode=KRY5217" target="_blank" rel="noopener">
+    <a class="link-card tone-indicacoes" href="https://www.iherb.com/ugc/wishlist?id=7ff6c746-c324-439c-873c-5d35b26e5c33&rcode=KRY5217" target="_blank" rel="noopener">
       <span class="icon">🌿</span>
       <span class="text">
         <p class="title">Suplementos que eu uso</p>
@@ -322,7 +337,7 @@
       </span>
     </a>
 
-    <a class="link-card" href="https://www.iherb.com/ugc/wishlist?id=3496dcae-79a5-4f2a-8a17-14605a360714&rcode=KRY5217" target="_blank" rel="noopener">
+    <a class="link-card tone-indicacoes" href="https://www.iherb.com/ugc/wishlist?id=3496dcae-79a5-4f2a-8a17-14605a360714&rcode=KRY5217" target="_blank" rel="noopener">
       <span class="icon">✨</span>
       <span class="text">
         <p class="title">Produtos de beleza que eu uso</p>
